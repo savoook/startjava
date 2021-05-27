@@ -8,7 +8,7 @@ public class Variable {
         double height = 1.2;
         char model = 'G';
         boolean actual = true;
-        System.out.println("noize: " + noize + " ,booferSize: " + booferSize + " ,speed: " + speed + " ,price: " + price + 
-                        " ,weight: " + weight + " ,height: " + height + " ,model: " + model + " ,actual: " + actual);
+        System.out.println("noize: " + noize + ", booferSize: " + booferSize + ", speed: " + speed + ", price: " + price + 
+                ", weight: " + weight + ", height: " + height + ", model: " + model + ", actual: " + actual);
     }
 }
