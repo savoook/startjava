@@ -4,31 +4,27 @@ public class ConditionalStatement {
         boolean mail = false;
         double height = 1.79;
         char firstCharName = 'M';
-        if (age > 20) {
+        if(age > 20) {
             System.out.println("Превыщение допустимого возраста");
         }
-        if (mail) {
+        if(mail) {
             System.out.println("Мужик!");
         }
-        if (!mail) {
+        if(!mail) {
             System.out.println("Немужик!");
         }
-        if (height < 1.80) {
+        if(height < 1.80) {
             System.out.println("Хоббит");
-        }
-        else 
-        {
+        } else {
             System.out.println("Великан");
         }
-        if (firstCharName == 'M') {
+        if(firstCharName == 'M') {
             System.out.println ("Имя начинается на " + firstCharName);
         }
-        else if (firstCharName == 'I') {
+        else if(firstCharName == 'I') {
             System.out.println ("Имя начинается на " + firstCharName);
-        }
-        else 
-        {
+        } else {
             System.out.println ("Имя не начинается на 'M' или 'I'");
-        } 
+        }
     }
 }
