@@ -8,17 +8,19 @@ public class Cycle {
             System.out.print(i + " ");
         }
         System.out.println();
+
         i = 6;
         while(i > -7) {
             System.out.print(i + " ");
             i--;
         }
         System.out.println();
+
         i = 10;
         int sum = 0;
         do {
             if(i % 2 != 0) {
-                sum = sum + i;
+                sum += i;
             }
             i++;
         } while(i < 21);
