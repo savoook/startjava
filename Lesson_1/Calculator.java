@@ -1,35 +1,29 @@
-public class Calculator() {
-    public class vozxedenieVStepen(int a, int b) {
+public class Calculator {
+    public static int exponentiation(int a, int b) {
         int result = 1;
-    for (int i; i <= b; i++){
-        result = result * a
+        for (int i = 1; i <= b; i++) {
+            result = result * a;
         }
-        return result
+        return result;
     }
+    
     public static void main(String[] args) {
+        int num1 = 8;
+        int num2 = 5;
+        char sign = '%';
 
-        int chislo1 = 2;
-        int chislo2 = 3;
-        char znak = '+';
-
-        if(char=='+') {
-            System.out.println(chislo1+chislo2);
-
-        } else if(char=='-') {
-            System.out.println(chislo1-chislo2);
-
-        } else if(char=='*') {
-            System.out.println(chislo1*chislo2);
-
-        } else if(char=='/') {
-            System.out.println(chislo1/chislo2);
-
-        } else if(char=='^') {  
-            System.out.println(vozxedenieVStepen(chislo1, chislo2));
-
-        } else if(char=='%') {
-            System.out.println(chislo1%chislo2);
-
+        if(sign=='+') {
+            System.out.println(num1+num2);
+        } else if(sign=='-') {
+            System.out.println(num1-num2);
+        } else if(sign=='*') {
+            System.out.println(num1*num2);
+        } else if(sign=='/') {
+            System.out.println(num1/num2);
+        } else if(sign=='^') {  
+            System.out.println(exponentiation(num1, num2));
+        } else if(sign=='%') {
+            System.out.println(num1%num2);
         }
     }
 }
