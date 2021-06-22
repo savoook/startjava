@@ -1,6 +1,7 @@
 public class WolfTest {
     public static void main(String[] args) {
         Wolf wolf1 = new Wolf();
+        
         wolf1.sex = "пацан";
         wolf1.name = "Щаспою";
         wolf1.weight = 20.5f;

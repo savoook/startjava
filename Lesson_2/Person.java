@@ -1,19 +1,19 @@
 public class Person {
-    public String name = "Вася"
-    public float height = 184.7f;
-    public float weight = 100.5f;
-    public String eyes = "blue";
-    public int earsOfLearningJava = 2;
+    String name = "Вася"
+    float height = 184.7f;
+    float weight = 100.5f;
+    String eyes = "blue";
+    int earsOfLearningJava = 2;
 
-    public void go() {
+    void go() {
         System.out.println("Человек пошел");
     }
 
-    public void seat() {
+    void seat() {
         System.out.println("Человек сел");
     }
 
-    public int learnJava() {
+    int learnJava() {
         return earsOfLearningJava;
     }
 }

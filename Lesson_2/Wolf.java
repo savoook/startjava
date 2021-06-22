@@ -1,27 +1,27 @@
 public class Wolf {
-    public String sex;
-    public String name;
-    public float weight;
-    public int age;
-    public String woolColor;
+    String sex;
+    String name;
+    float weight;
+    int age;
+    String woolColor;
  
-    public void go() {
+    void go() {
         System.out.println(this.name + " пошел");
     }
 
-    public void seat() {
+    void seat() {
         System.out.println(this.name + " сел");
     }
 
-    public void run() {
+    void run() {
         System.out.println(this.name + " побежал");
     }
 
-    public void cry() {
+    void cry() {
         System.out.println(this.name + " завыл");
     }
 
-    public void hunt() {
+    void hunt() {
         System.out.println(this.name + " охотится");
     }
 }
