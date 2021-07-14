@@ -3,9 +3,6 @@ public class Calculator {
     private int numTwo;
     private char sign;
 
-    public Calculator() {
-    }
-
     public Calculator(int numOne, int numTwo, char sign) {
         this.numOne = numOne;
         this.numTwo = numTwo;
@@ -36,7 +33,7 @@ public class Calculator {
         this.sign = sign;
     }
     
-    public void calculate(int numOne, int numTwo, char sign) {
+    public void calculate() {
         switch (sign) {
             case '+':
                 System.out.println(numOne + numTwo);
