@@ -12,22 +12,22 @@ public class GuessNumber {
     }
 
     public void play() {
-        Random rd = new Random();
-        targetNum = rd.nextInt(10);
+        Random rnd = new Random();
+        targetNum = rnd.nextInt(10);
         System.out.println("Компьютер загадал число!");
         Scanner sc = new Scanner(System.in);
         Player currentPlayer = player2;
         while (true) {
-             currentPlayer = currentPlayer == player1 ? player2 : player1;
-            System.out.println(currentPlayer.getName() + " ,делай свою попытку!");
+            currentPlayer = currentPlayer == player1 ? player2 : player1;
+            System.out.println(currentPlayer.getName() + ", делай свою попытку!");
             int attempt = sc.nextInt();
             currentPlayer.setNumber(attempt);
             if (attempt > targetNum) {
-                System.out.println(currentPlayer.getName() + " ,вы ввели число, которое больше того что загадал компьютер");
+                System.out.println(currentPlayer.getName() + ", вы ввели число, которое больше того что загадал компьютер");
             } else if(attempt < targetNum) {
-                System.out.println(currentPlayer.getName() + " ,вы ввели число, которое меньше того что загадал компьютер");
+                System.out.println(currentPlayer.getName() + ", вы ввели число, которое меньше того что загадал компьютер");
             } else {
-                System.out.println(currentPlayer.getName() + " ,в точку!");
+                System.out.println(currentPlayer.getName() + ", в точку!");
                 break;
             }
         }

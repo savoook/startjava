@@ -8,30 +8,6 @@ public class Calculator {
         this.numTwo = numTwo;
         this.sign = sign;
     }
-
-    public int getNumOne() {
-        return numOne;
-    }
-    
-    public void setNumOne() {
-        this.numOne = numOne;
-    }
-    
-    public int getNumTwo() {
-        return numTwo;
-    }
-    
-    public void setNumTwo() {
-        this.numTwo = numTwo;
-    }
-    
-    public char getSign() {
-        return sign;
-    }
-    
-    public void setSign() {
-        this.sign = sign;
-    }
     
     public void calculate() {
         switch (sign) {
