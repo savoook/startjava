@@ -1,4 +1,5 @@
-package com.startjava.lesson_2.calculator;
+package com.startjava.lesson_2_3_4.calculator;
+
 
 public class Calculator {
     private int numOne;
@@ -10,7 +11,7 @@ public class Calculator {
         this.numTwo = numTwo;
         this.sign = sign;
     }
-    
+
     public void calculate() {
         switch (sign) {
             case '+':
@@ -27,10 +28,11 @@ public class Calculator {
                     System.out.println("Деление на ноль");
                 } else {
                     System.out.println(numOne / numTwo);
-                }    
-                break; 
+                }
+                break;
             case '^':
-                System.out.println(involute(numOne, numTwo));
+                //System.out.println(involute(numOne, numTwo));
+                System.out.println(Math.pow(numOne, numTwo));
                 break;
             case '%':
                 if (numTwo == 0) {
@@ -44,7 +46,7 @@ public class Calculator {
 
     private static int involute(int a, int b) {
         int result = 1;
-        
+
         for (int i = 0; i < b; i++) {
             result *= a;
         }

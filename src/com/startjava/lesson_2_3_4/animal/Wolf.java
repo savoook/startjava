@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.animal;
+package com.startjava.lesson_2_3_4.animal;
 
 public class Wolf {
     private String sex;
@@ -36,7 +36,7 @@ public class Wolf {
     }
 
     public void setAge(int age) {
-        if (age > 8 && age <= 0) {
+        if (age > 8 || age <= 0) {
             System.out.println("Incorrect age!");
         } else {
             this.age = age;
