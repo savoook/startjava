@@ -1,15 +1,24 @@
 package com.startjava.lesson_2_3_4.game;
 
-import java.util.Arrays;
-
 public class Player {
     private String name;
-    private int number;
-    private int[] options = {0, 0, 0};
-    private int count = 0;
+    private int[] options = new int[10];
+    private int count;
 
     public Player(String name) {
         this.name = name;
+    }
+
+    public int[] getOptions() {
+        return options;
+    }
+
+    public void setOptions(int[] options) {
+        this.options = options;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getCount() {
@@ -20,29 +29,4 @@ public class Player {
         this.count = count;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int[] getOptions() {
-        return options;
-    }
-
-    @Override
-    public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", number=" + number +
-                ", options=" + Arrays.toString(options) +
-                ", count=" + count +
-                '}';
-    }
 }

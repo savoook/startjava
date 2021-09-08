@@ -18,12 +18,12 @@ public class GuessNumberTest {
             GuessNumber game = new GuessNumber(player1, player2);
             game.play();
             System.out.println("Хотите продолжить игру? [yes/no]:");
-            int count = 0;
+            //int count = 0;
             do {
-                if (count > 0)
+                if (!agreement.equals("yes") && !agreement.equals("no"))
                     System.out.println("Некорректный ввод");
                 agreement = sc.nextLine();
-                count++;
+                //count++;
             } while (!agreement.equals("yes") && !agreement.equals("no"));
         }
     }
